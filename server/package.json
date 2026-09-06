@@ -1,0 +1,21 @@
+{
+  "name": "keyauth",
+  "version": "1.0.0",
+  "description": "KeyAuth - sistema de autenticacao por chave (estilo keyauth.cc) com bot de Discord + API REST",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "register-commands": "node register-commands.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1"
+  }
+}
