@@ -2,6 +2,10 @@
 // Camada de acesso ao banco (Postgres via node-postgres, apontando pro Supabase).
 // O bot do Discord e a API HTTP compartilham o mesmo pool de conexoes.
 
+// Força o Node.js a priorizar IPv4 na resolução DNS
+const dns = require('node:dns');
+dns.setDefaultResultOrder('ipv4first');
+
 const { Pool } = require('pg');
 
 const pool = new Pool({
